@@ -1,0 +1,135 @@
+# This is the configuration file for Ghostty.
+#
+# This template file has been automatically created at the following
+# path since Ghostty couldn't find any existing config files on your system:
+#
+#   /Users/stefan.pinter/Library/Application Support/com.mitchellh.ghostty/config
+#
+# The template does not set any default options, since Ghostty ships
+# with sensible defaults for all options. Users should only need to set
+# options that they want to change from the default.
+#
+# Run `ghostty +show-config --default --docs` to view a list of
+# all available config options and their default values.
+#
+# Additionally, each config option is also explained in detail
+# on Ghostty's website, at https://ghostty.org/docs/config.
+
+# Config syntax crash course
+# ==========================
+# # The config file consists of simple key-value pairs,
+# # separated by equals signs.
+# font-family = Iosevka
+# window-padding-x = 2
+#
+# # Spacing around the equals sign does not matter.
+# # All of these are identical:
+# key=value
+# key= value
+# key =value
+# key = value
+#
+# # Any line beginning with a # is a comment. It's not possible to put
+# # a comment after a config option, since it would be interpreted as a
+# # part of the value. For example, this will have a value of "#123abc":
+# background = #123abc
+#
+# # Empty values are used to reset config keys to default.
+# key =
+#
+# # Some config options have unique syntaxes for their value,
+# # which is explained in the docs for that config option.
+# # Just for example:
+# resize-overlay-duration = 4s 200ms
+# macos-titlebar-style = hidden
+theme = rose pine
+quit-after-last-window-closed = true
+quick-terminal-animation-duration = 1
+window-padding-x = 20
+window-padding-y = 20
+window-padding-balance = true
+font-size = 16
+
+# Font - using Nerd Font for better icons and symbols
+# If you don't have JetBrainsMono Nerd Font installed, Ghostty will fall back to Menlo
+font-family = JetBrainsMono Nerd Font
+font-family = Menlo
+font-family = monospace
+
+# Adjust line height for better readability
+adjust-cell-height = 10%
+
+# Transparency and blur for modern look
+background-opacity = 0.85
+background-blur-radius = 40
+
+
+##background = 192019
+window-inherit-working-directory = true
+confirm-close-surface = false
+resize-overlay = never
+scrollback-limit = 4294967295
+
+# =============================================================================
+# RECOMMENDED IMPROVEMENTS - All Active
+# =============================================================================
+
+# Make option key behave as Alt (useful for terminal shortcuts)
+macos-option-as-alt = true
+
+# Shell integration for prompt marking and cursor position
+shell-integration = detect
+
+# Copy text when you select it (no need to press Cmd+C)
+copy-on-select = true
+
+# Cursor style - block is easier to see, bar is more minimal
+# options: block, bar, underline
+cursor-style = block
+cursor-style-blink = false
+
+# Focus follows mouse - when you move mouse over a split, focus switches automatically
+# Useful if you use splits frequently
+focus-follows-mouse = false
+
+# Enable clicking on URLs to open them
+link-url = true
+
+# Minimum contrast ratio for better accessibility
+# Higher values = more contrast between text and background
+minimum-contrast = 1.0
+
+# Clipboard settings - allow apps to write to clipboard
+clipboard-write = allow
+clipboard-paste-protection = true
+
+# Mouse hide behavior
+mouse-hide-while-typing = true
+
+# Custom Keybindings for Productivity
+# Split terminal windows
+keybind = cmd+d=new_split:right
+keybind = cmd+shift+d=new_split:down
+keybind = cmd+w=close_surface
+
+# Tab navigation
+keybind = cmd+shift+t=new_tab
+keybind = cmd+1=goto_tab:1
+keybind = cmd+2=goto_tab:2
+keybind = cmd+3=goto_tab:3
+keybind = cmd+4=goto_tab:4
+keybind = cmd+5=goto_tab:5
+
+# Quick fullscreen toggle
+keybind = cmd+enter=toggle_fullscreen
+
+# Clear screen shortcut
+keybind = cmd+k=clear_screen
+
+# Font ligatures - enabled by default in most Nerd Fonts
+# Uncomment below to DISABLE ligatures if you prefer
+# font-feature = -calt
+# font-feature = -liga
+# font-feature = -dlig
+
+theme = neon-blue-split-contrast

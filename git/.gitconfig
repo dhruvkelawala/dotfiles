@@ -1,0 +1,18 @@
+[user]
+	name = Dhruv Kelawala
+	email = dhruvrk2000@gmail.com
+[core]
+	editor = nano
+[init]
+	defaultBranch = main
+[filter "lfs"]
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
+	clean = git-lfs clean -- %f
+[diff]
+	tool = vscode
+[difftool "vscode"]
+	cmd = "code --wait --diff  "
+[alias]
+	cp = cherry-pick
