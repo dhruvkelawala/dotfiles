@@ -1,0 +1,16 @@
+# OS
+.DS_Store
+
+# Nvim plugin state (regenerated on launch)
+nvim/lazy-lock.json
+nvim/plugin/
+
+# OpenCode runtime
+opencode/node_modules/
+opencode/bun.lock
+opencode/package.json
+opencode/commands/
+
+# Secrets (never commit)
+*.secret
+*.token
